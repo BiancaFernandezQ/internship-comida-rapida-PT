@@ -1,0 +1,152 @@
+body {
+    font-family: "Flamenco", system-ui;
+    margin: 0;
+    padding: 0;
+    /*centrando en pantalla*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    background-color: #f5ebdc;
+
+}
+
+.ambos {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    /*contenedor ambos*/
+
+
+    background-image: url(./img/hamburguesa.png);
+    padding: 50px;
+}
+
+.formulario-contenedor,
+.platillos-contenedor {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+/* FORMULARIO */
+.formulario-contenedor form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario-contenedor label,
+.formulario-contenedor input,
+.formulario-contenedor textarea,
+.formulario-contenedor select {
+    margin-bottom: 10px;
+    height: 20px;
+    border-color: #9e260ea2;
+    border-radius: 5px;
+}
+
+.formulario-contenedor label {
+    font-weight: normal;
+    color: black;
+    font-size: 20px;
+}
+
+.formulario-contenedor input,
+.formulario-contenedor textarea,
+.formulario-contenedor select {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+/*descripcion*/
+textarea#descripcion {
+    height: 35px;
+}
+
+/*PLATILLOS Y FORMULARIOS*/
+.platillos-contenedor h2,
+.formulario-contenedor h2 {
+    text-align: center;
+}
+
+
+/*BOTON*/
+.boton {
+    margin-top: 30px;
+    width: 50%;
+    height: 30px;
+    /*centrando boton*/
+    margin-right: auto;
+    margin-left: auto;
+
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background-color: #9e260e;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: #9e260ea2;
+    color: white;
+    font-weight: bold;
+}
+
+
+/*PLATILLOS LISTA*/
+.platillo-item {
+    background: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.platillo-item button {
+    margin-right: 5px;
+}
+
+/*! PLATILLOS LIST*/
+/* Scrollbar para platillos-contenedor */
+.platillos-contenedor {
+    max-height: 500px;
+    overflow-y: auto; /*scrollbar vertical */
+}
+
+#platillos-list>div {
+    padding: 10px;
+    border-bottom: 1px solid #d92100;
+}
+
+
+/*!botones editar y eliminar */
+.btnEliminar,
+.btnEditar {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btnEliminar {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btnEliminar:hover {
+    background-color: #c0392b;
+}
+
+.btnEditar {
+    background-color: #3498db;
+    color: white;
+}
+
+.btnEditar:hover {
+    background-color: #2980b9;
+}

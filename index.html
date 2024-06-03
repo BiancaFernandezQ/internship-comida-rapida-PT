@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANGREBURGERS 🍔</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Flamenco:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/comida-rapida.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="ambos">
+
+        <div class="formulario-contenedor">
+            <h2>Agregar Platillo</h2>
+            <form id="platilloForm">
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" type="text" name="nombre" placeholder="Ingresa nombre del platillo"
+                    pattern="[A-Za-z\s]+" required>
+
+                <label for="precio">Precio:</label>
+                <input id="precio" type="number" name="precio" step="0.01" placeholder="Ingresa precio del platillo"
+                    required>
+
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion"
+                    placeholder="Ingresa una descripcion del platillo"></textarea>
+
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="Hamburguesa">Hamburguesa</option>
+                    <option value="Hot Dogs">Hot Dogs</option>
+                    <option value="Snacks">Snacks</option>
+                    <option value="Bebidas">Bebidas</option>
+                    <option value="Otros">Otros</option>
+                </select>
+
+                <label for="ingredientes">Ingredientes:</label>
+                <input id="ingredientes" type="text" name="ingredientes" required>
+
+                <button id="btn-agregar" class="boton">AGREGAR</button>
+            </form>
+        </div>
+
+        <!--Traer y pintar-->
+        <div class="platillos-contenedor">
+            <h2>Platillos Registrados</h2>
+
+            <div id="platillos-list"></div> <!--aqui pintaremos los platillos-->
+        </div>
+
+    </div> <!--.ambos-->
+
+    <script type="module" src="./index.js"></script>
+</body>
+
+</html>
